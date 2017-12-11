@@ -1,0 +1,76 @@
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  padding: 20px;
+  background-color: #f3f2f2;
+  text-align: center;
+}
+.app {
+  width: 300px;
+  margin: 0 auto;
+}
+.pageSwitch {
+  display: inline-block;
+  color: rgb(58, 58, 58);
+  opacity: 0.3;
+  pointer-events: none;
+  cursor: default;
+  padding: 10px 15px;
+  text-decoration: none;
+  margin: 15px 10px;
+  user-select: none;
+  background-color: white;
+  border-radius: 10px;
+}
+.pageSwitch.active {
+  opacity: 1;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.userItem {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: rgb(58, 58, 58);
+  text-decoration: none;
+}
+
+.userItem:hover {
+  text-decoration: underline;
+}
+
+.userItem img {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+
+input {
+  background: transparent;
+  margin-top: 10px;
+  height: 33px;
+  font-size: 16px;
+  line-height: 1.32;
+  color: #000;
+  padding: 7px 9px;
+  border-radius: 7px;
+  border: 1px solid transparent;
+  outline: none;
+}
+
+input:hover {
+  border-color: #ccc;
+}
+input:focus {
+  border-color: #767676;
+}
+input:focus:not(:valid) {
+  border-color: red;
+}
+
+.backArrow {
+  display: block;
+  margin: 0 auto 15px;
+  cursor: pointer;
+}
